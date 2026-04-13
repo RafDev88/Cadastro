@@ -1,25 +1,31 @@
-package com.cadastro.cadastro_spring.Model;
+package com.cadastro.cadastro_spring.Ninja;
 
 
+import com.cadastro.cadastro_spring.Missoes.MissoesModel;
 import jakarta.persistence.*;
+
+import java.util.List;
 
 //Enttity tranfirma uma classe em uma entidade do BD
 //GenerationValeu usado para nossa estrategia de como gerar o Id.
 @Entity
 @Table(name="bd_cadastro")
 
-public class Model {
+public class NinjaModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
     private String email;
     private int idade;
+    @ManyToOne
+    @JoinColumn(name = "missoes_id")//chave estrangeria 
+    private MissoesModel missoes;
 
-    public Model() {
+    public NinjaModel() {
     }
 
-    public Model(String nome, String email, int idade) {
+    public NinjaModel(String nome, String email, int idade) {
         this.nome = nome;
         this.email = email;
         this.idade = idade;
