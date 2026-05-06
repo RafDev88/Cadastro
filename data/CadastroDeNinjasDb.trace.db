@@ -1,0 +1,21 @@
+2026-05-06 14:57:13.568846-03:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TB_CADASTRO" not found; SQL statement:
+-- V2: Migration para adicionar a coluna de Rank na t [42102-240]
+2026-05-06 15:05:42.055372-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM BD_CADASTRO ""flyway_schema_history""""flyway_schema_history""""flyway_schema_history""""flyway_schema_history""[*]version version"; SQL statement:
+SELECT * FROM BD_CADASTRO "flyway_schema_history""flyway_schema_history""flyway_schema_history""flyway_schema_history"version version [42000-240]
+2026-05-06 15:05:44.519153-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM BD_CADASTRO ""flyway_schema_history""""flyway_schema_history""""flyway_schema_history""""flyway_schema_history""[*]version version description"; SQL statement:
+SELECT * FROM BD_CADASTRO "flyway_schema_history""flyway_schema_history""flyway_schema_history""flyway_schema_history"version version description [42000-240]
+2026-05-06 15:05:46.897032-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM BD_CADASTRO ""flyway_schema_history""""flyway_schema_history""""flyway_schema_history""""flyway_schema_history""[*]version version description ""flyway_schema_history"""; SQL statement:
+SELECT * FROM BD_CADASTRO "flyway_schema_history""flyway_schema_history""flyway_schema_history""flyway_schema_history"version version description "flyway_schema_history" [42000-240]
+2026-05-06 15:07:14.151430-03:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM ""flyway_schema_history""BD_CADASTRO [*]BD_CADASTRO BD_CADASTRO"; SQL statement:
+SELECT * FROM "flyway_schema_history"BD_CADASTRO BD_CADASTRO BD_CADASTRO [42000-240]
+2026-05-06 15:07:15.132494-03:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM ""flyway_schema_history""BD_CADASTRO [*]BD_CADASTRO BD_CADASTRO"; SQL statement:
+SELECT * FROM "flyway_schema_history"BD_CADASTRO BD_CADASTRO BD_CADASTRO [42000-240]
+2026-05-06 15:08:30.494921-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM BD_CADASTRO ""flyway_schema_history""[*]TB_MISSOES"; SQL statement:
+SELECT * FROM BD_CADASTRO "flyway_schema_history"TB_MISSOES [42000-240]
