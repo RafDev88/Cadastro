@@ -1,6 +1,7 @@
 package com.cadastro.cadastro_spring.Missoes;
 
 import com.cadastro.cadastro_spring.Ninja.NinjaModel;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -22,6 +23,7 @@ public class MissoesModel {
     private String dificuldade;
     //OneToMany pode ter varias missoes;
     @OneToMany(mappedBy = "missoes")
+    @JsonIgnore
     private List<NinjaModel> nijas;
 
 

@@ -19,3 +19,42 @@ SELECT * FROM "flyway_schema_history"BD_CADASTRO BD_CADASTRO BD_CADASTRO [42000-
 2026-05-06 15:08:30.494921-03:00 jdbc[13]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM BD_CADASTRO ""flyway_schema_history""[*]TB_MISSOES"; SQL statement:
 SELECT * FROM BD_CADASTRO "flyway_schema_history"TB_MISSOES [42000-240]
+2026-05-27 12:21:21.749345-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TB_CADASTRO" not found; SQL statement:
+INSERT INTO TB_CADASTRO (id, nome, email, idade, img_url , missoes_id)
+VALUES (1, 'Naruto Uzumaki', 'naruto@gmail.com', 16, 'http://naturo.jpg', 1) [42102-240]
+2026-05-27 12:25:05.141779-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'naruto@gmail.com' (BD_CADASTRO: ""IDADE"" INTEGER)"; SQL statement:
+INSERT INTO BD_CADASTRO
+VALUES (1, 'Naruto Uzumaki', 'naruto@gmail.com', 16, 'http://naturo.jpg', 1) [22018-240]
+2026-05-27 12:26:10.613481-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]BD_CADASTRO BD_CADASTRO"; expected "BACKUP, BEGIN"; SQL statement:
+BD_CADASTRO BD_CADASTRO [42001-240]
+2026-05-27 12:26:15.506754-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]BD_CADASTRO BD_CADASTRO"; expected "BACKUP, BEGIN"; SQL statement:
+BD_CADASTRO BD_CADASTRO [42001-240]
+2026-05-27 12:26:17.100579-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]BD_CADASTRO BD_CADASTRO"; expected "BACKUP, BEGIN"; SQL statement:
+BD_CADASTRO BD_CADASTRO [42001-240]
+2026-05-27 12:26:19.169458-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]BD_CADASTRO BD_CADASTRO"; expected "BACKUP, BEGIN"; SQL statement:
+BD_CADASTRO BD_CADASTRO [42001-240]
+2026-05-27 12:28:14.313357-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO BD_CADASTRO (id, nome, email, idade, img_url,[*])\000d\000aVALUES (1, 'Naruto Uzumaki', 'naruto@gmail.com', 16, 'http://naturo.jpg',)"; expected "identifier"; SQL statement:
+INSERT INTO BD_CADASTRO (id, nome, email, idade, img_url,)
+VALUES (1, 'Naruto Uzumaki', 'naruto@gmail.com', 16, 'http://naturo.jpg',) [42001-240]
+2026-05-27 12:30:22.196351-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]BD_CADASTRO"; expected "BACKUP, BEGIN"; SQL statement:
+BD_CADASTRO [42001-240]
+2026-05-27 12:30:27.369988-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]BD_CADASTRO BD_CADASTRO"; expected "BACKUP, BEGIN"; SQL statement:
+BD_CADASTRO BD_CADASTRO [42001-240]
+2026-05-27 12:30:30.297821-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]TB_MISSOES"; expected "TRUNCATE"; SQL statement:
+TB_MISSOES [42001-240]
+2026-05-27 12:30:32.640447-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]BD_CADASTRO"; expected "BACKUP, BEGIN"; SQL statement:
+BD_CADASTRO [42001-240]
+2026-05-27 12:30:42.886231-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]BD_CADASTRO BD_CADASTRO BD_CADASTRO"; expected "BACKUP, BEGIN"; SQL statement:
+BD_CADASTRO BD_CADASTRO BD_CADASTRO [42001-240]
